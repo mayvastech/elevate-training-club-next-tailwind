@@ -6,4 +6,3 @@ A premium gym website built as a portfolio project for a modern fitness studio i
 
 - Next.js 
 - Tailwind CSS
-```
