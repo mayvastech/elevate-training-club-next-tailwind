@@ -16,7 +16,10 @@ export default function Home() {
       <Navbar />
 
       <main className="min-h-screen bg-black text-white">
-        <section id="home" className="relative overflow-hidden px-5 py-20 sm:py-24 lg:py-28">
+        <section
+          id="home"
+          className="relative overflow-hidden px-5 py-20 sm:py-24 lg:py-28"
+        >
           <div className="absolute left-1/2 top-0 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-lime-300/10 blur-3xl" />
           <div className="absolute right-0 top-32 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
@@ -27,11 +30,14 @@ export default function Home() {
               </p>
 
               <h1 className="mt-7 max-w-4xl text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
-                Personal training and small group fitness built around real progress.
+                Personal training and small group fitness built around real
+                progress.
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-                Build strength, confidence and consistency with expert coaching, structured programmes and a supportive training environment in East London.
+                Build strength, confidence and consistency with expert coaching,
+                structured programmes and a supportive training environment in
+                East London.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
@@ -65,7 +71,9 @@ export default function Home() {
                       <p className="text-sm font-black uppercase tracking-[0.25em] text-lime-300">
                         Today
                       </p>
-                      <p className="mt-2 text-2xl font-black text-white">Strength Foundations</p>
+                      <p className="mt-2 text-2xl font-black text-white">
+                        Strength Foundations
+                      </p>
                     </div>
                     <div className="rounded-full bg-lime-300 px-4 py-2 text-sm font-black text-black">
                       07:00
@@ -79,7 +87,10 @@ export default function Home() {
                       "Technique feedback",
                       "Simple progress tracking",
                     ].map((item) => (
-                      <div key={item} className="flex items-center gap-3 rounded-2xl bg-white/10 p-4">
+                      <div
+                        key={item}
+                        className="flex items-center gap-3 rounded-2xl bg-white/10 p-4"
+                      >
                         <span className="h-3 w-3 rounded-full bg-lime-300" />
                         <span className="font-bold text-white/85">{item}</span>
                       </div>
@@ -105,8 +116,13 @@ export default function Home() {
         <section className="border-y border-white/10 bg-white/[0.03] px-5 py-16">
           <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((benefit) => (
-              <div key={benefit.title} className="rounded-[2rem] border border-white/10 bg-black/40 p-6">
-                <h3 className="text-xl font-black text-white">{benefit.title}</h3>
+              <div
+                key={benefit.title}
+                className="rounded-[2rem] border border-white/10 bg-black/40 p-6"
+              >
+                <h3 className="text-xl font-black text-white">
+                  {benefit.title}
+                </h3>
                 <p className="mt-3 leading-7 text-white/60">{benefit.text}</p>
               </div>
             ))}
@@ -119,7 +135,9 @@ export default function Home() {
               eyebrow="Coaching"
               title="Training options for different goals and routines."
             >
-              From private coaching to structured small group sessions, every option is designed to feel clear, supportive and focused on progress.
+              From private coaching to structured small group sessions, every
+              option is designed to feel clear, supportive and focused on
+              progress.
             </SectionHeading>
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -131,7 +149,9 @@ export default function Home() {
                   <p className="text-sm font-black uppercase tracking-[0.2em] text-lime-300">
                     {option.meta}
                   </p>
-                  <h3 className="mt-4 text-2xl font-black text-white">{option.title}</h3>
+                  <h3 className="mt-4 text-2xl font-black text-white">
+                    {option.title}
+                  </h3>
                   <p className="mt-4 leading-8 text-white/65">{option.text}</p>
                 </article>
               ))}
@@ -139,7 +159,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="classes" className="scroll-mt-24 bg-[#f3efe7] px-5 py-20 text-black sm:py-24">
+        <section
+          id="classes"
+          className="scroll-mt-24 bg-[#f3efe7] px-5 py-20 text-black sm:py-24"
+        >
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.25em] text-lime-700">
@@ -149,7 +172,9 @@ export default function Home() {
                 A focused timetable that helps members stay consistent.
               </h2>
               <p className="mt-5 text-lg leading-8 text-black/65">
-                The schedule highlights early morning and evening sessions for busy professionals, with a weekend full-body session for members who prefer slower starts.
+                The schedule highlights early morning and evening sessions for
+                busy professionals, with a weekend full-body session for members
+                who prefer slower starts.
               </p>
             </div>
 
@@ -170,19 +195,31 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-5 py-20 sm:py-24">
+        <section id="testimonials" className="px-5 py-20 sm:py-24">
           <div className="mx-auto max-w-7xl">
-            <SectionHeading eyebrow="Member stories" title="Supportive coaching, measurable progress and a club people return to." align="center">
-              Testimonials add social proof and help future members imagine what joining the gym could feel like.
+            <SectionHeading
+              eyebrow="Member stories"
+              title="Real coaching, steady progress and a club people return to."
+              align="center"
+            >
+              Hear from members who found more structure, confidence and
+              consistency through coaching at Elevate.
             </SectionHeading>
 
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {testimonials.map((testimonial) => (
-                <figure key={testimonial.name} className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7">
-                  <blockquote className="text-lg leading-8 text-white/80">“{testimonial.quote}”</blockquote>
+                <figure
+                  key={testimonial.name}
+                  className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-7"
+                >
+                  <blockquote className="text-lg leading-8 text-white/80">
+                    “{testimonial.quote}”
+                  </blockquote>
                   <figcaption className="mt-8">
                     <p className="font-black text-white">{testimonial.name}</p>
-                    <p className="mt-1 text-sm text-white/45">{testimonial.detail}</p>
+                    <p className="mt-1 text-sm text-white/45">
+                      {testimonial.detail}
+                    </p>
                   </figcaption>
                 </figure>
               ))}
@@ -190,7 +227,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="memberships" className="scroll-mt-24 bg-white px-5 py-20 text-black sm:py-24">
+        <section
+          id="memberships"
+          className="scroll-mt-24 bg-white px-5 py-20 text-black sm:py-24"
+        >
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-3xl">
@@ -201,7 +241,8 @@ export default function Home() {
                   Simple plans for training with more structure.
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-black/65">
-                  Clear pricing gives visitors a quick way to compare options and decide the best next step before enquiring.
+                  Clear pricing gives visitors a quick way to compare options
+                  and decide the best next step before enquiring.
                 </p>
               </div>
               <ButtonLink href="#trial" variant="dark">
@@ -227,13 +268,25 @@ export default function Home() {
                   <h3 className="text-2xl font-black">{plan.name}</h3>
                   <div className="mt-5 flex items-end gap-2">
                     <p className="text-5xl font-black">{plan.price}</p>
-                    <p className={plan.featured ? "text-white/50" : "text-black/50"}>{plan.cadence}</p>
+                    <p
+                      className={
+                        plan.featured ? "text-white/50" : "text-black/50"
+                      }
+                    >
+                      {plan.cadence}
+                    </p>
                   </div>
                   <ul className="mt-7 space-y-4">
                     {plan.features.map((feature) => (
                       <li key={feature} className="flex gap-3">
                         <span className="mt-1 h-2 w-2 rounded-full bg-lime-300" />
-                        <span className={plan.featured ? "text-white/70" : "text-black/65"}>{feature}</span>
+                        <span
+                          className={
+                            plan.featured ? "text-white/70" : "text-black/65"
+                          }
+                        >
+                          {feature}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -246,25 +299,41 @@ export default function Home() {
         <section id="visit" className="scroll-mt-24 px-5 py-20 sm:py-24">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <SectionHeading eyebrow="Visit" title="A premium training space in Shoreditch.">
-                Location, opening hours and contact details are kept easy to find, so visitors can quickly decide whether the club fits their routine.
+              <SectionHeading
+                eyebrow="Visit"
+                title="A premium training space in Shoreditch."
+              >
+                Location, opening hours and contact details are kept easy to
+                find, so visitors can quickly decide whether the club fits their
+                routine.
               </SectionHeading>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
-                  <p className="text-sm font-black uppercase tracking-[0.2em] text-lime-300">Location</p>
-                  <p className="mt-3 text-lg font-black">Shoreditch, East London</p>
-                  <p className="mt-2 text-white/55">A short walk from Shoreditch High Street.</p>
+                  <p className="text-sm font-black uppercase tracking-[0.2em] text-lime-300">
+                    Location
+                  </p>
+                  <p className="mt-3 text-lg font-black">
+                    Shoreditch, East London
+                  </p>
+                  <p className="mt-2 text-white/55">
+                    A short walk from Shoreditch High Street.
+                  </p>
                 </div>
                 <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6">
-                  <p className="text-sm font-black uppercase tracking-[0.2em] text-lime-300">Hours</p>
+                  <p className="text-sm font-black uppercase tracking-[0.2em] text-lime-300">
+                    Hours
+                  </p>
                   <p className="mt-3 text-lg font-black">Mon–Fri: 6am–9pm</p>
                   <p className="mt-2 text-white/55">Sat–Sun: 8am–4pm</p>
                 </div>
               </div>
             </div>
 
-            <div id="trial" className="scroll-mt-24 rounded-[2.5rem] border border-lime-300/20 bg-lime-300 p-8 text-black shadow-2xl shadow-lime-300/20 sm:p-10">
+            <div
+              id="trial"
+              className="scroll-mt-24 rounded-[2.5rem] border border-lime-300/20 bg-lime-300 p-8 text-black shadow-2xl shadow-lime-300/20 sm:p-10"
+            >
               <p className="text-sm font-black uppercase tracking-[0.25em] text-black/60">
                 Start here
               </p>
@@ -272,7 +341,8 @@ export default function Home() {
                 Book a free trial session.
               </h2>
               <p className="mt-5 text-lg leading-8 text-black/70">
-                Tell us your goal, current training experience and preferred session time. A coach will help you choose the best first step.
+                Tell us your goal, current training experience and preferred
+                session time. A coach will help you choose the best first step.
               </p>
 
               <form className="mt-8 grid gap-4">
