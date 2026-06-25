@@ -35,9 +35,15 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-                Build strength, confidence and consistency with expert coaching,
-                structured programmes and a supportive training environment in
-                East London.
+                <span className="block">
+                  Premium personal training and small group fitness in
+                  Shoreditch.
+                </span>
+                <span className="mt-2 block">
+                  Build strength, confidence and consistency with expert
+                  coaching, structured programmes and a supportive training
+                  environment.
+                </span>
               </p>
 
               <div className="mt-9 flex flex-wrap gap-4">
