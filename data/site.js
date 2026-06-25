@@ -64,7 +64,7 @@ export const testimonials = [
   {
     quote:
       "I joined for accountability and stayed because the environment makes training feel sustainable.",
-    name: "Priya K.",
+    name: "Maya K.",
     detail: "Personal training client",
   },
 ];

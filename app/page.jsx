@@ -309,9 +309,6 @@ export default function Home() {
                 eyebrow="Visit"
                 title="A premium training space in Shoreditch."
               >
-                Location, opening hours and contact details are kept easy to
-                find, so visitors can quickly decide whether the club fits their
-                routine.
               </SectionHeading>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
