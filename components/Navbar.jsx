@@ -14,14 +14,21 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <a href="#home" className="text-base font-black tracking-tight text-white sm:text-lg">
+        <a
+          href="#home"
+          className="text-base font-black tracking-tight text-white sm:text-lg"
+        >
           Elevate Training Club
         </a>
 
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="hidden items-center gap-8 text-sm font-bold text-white/65 md:flex">
             {desktopLinks.map((link) => (
-              <a key={link.href} href={link.href} className="transition hover:text-white">
+              <a
+                key={link.href}
+                href={link.href}
+                className="transition hover:text-white"
+              >
                 {link.label}
               </a>
             ))}
