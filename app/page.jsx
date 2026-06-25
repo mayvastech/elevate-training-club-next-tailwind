@@ -247,8 +247,7 @@ export default function Home() {
                   Simple plans for training with more structure.
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-black/65">
-                  Clear pricing gives visitors a quick way to compare options
-                  and decide the best next step before enquiring.
+                  Choose the level of coaching that fits your routine, goals and budget, then book a free trial to find the right starting point.
                 </p>
               </div>
               <ButtonLink href="#trial" variant="dark">
